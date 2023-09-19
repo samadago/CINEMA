@@ -1,7 +1,7 @@
 # CINEMA 
 1.Build with:
 Diagrams.net
-MariaDB Server version: 10.5.3-MariaDB 
+MariaDB Server version: 10.5.20-MariaDB 
 DBeaver Community
 
 2.Installation
@@ -92,11 +92,11 @@ $ cp cinema_export.sql path/to/copy/cinema
 
 Create a new database :
 
-$ CREATE DATABASE cinema2;
+$ CREATE DATABASE cinema;
 
 Allow all rights to the user :
 
-$ GRANT ALL PRIVILEGES ON cinema2.* TO username@localhost;
+$ GRANT ALL PRIVILEGES ON cinema.* TO username@localhost;
 
 Quit :
 
@@ -104,7 +104,7 @@ $ quit;
 
 To import the database, use :
 
-$ mysql -u username -p cinema2 < cinema_export.sql
+$ mysql -u username -p cinema < cinema_export.sql
 
 To check the database, use:
 
@@ -146,7 +146,7 @@ Ensuite, créez la base de données à l'aide du système de gestion de base de 
 
 Construire avec
 Diagrammes.net
-Version du serveur MariaDB : 10.5.3-MariaDB 
+Version du serveur MariaDB : 10.5.20-MariaDB 
 Communauté DBeaver
 Prérequis
 
@@ -237,11 +237,11 @@ $ cp cinema_export.sql path/to/copy/cinema
 Restaurer
 Créez une nouvelle base de données :
 
-$ CREATE DATABASE cinema2;
+$ CREATE DATABASE cinema;
 
 Accorder tous les droits à l'utilisateur :
 
-$ GRANT ALL PRIVILEGES ON cinema2.* TO username@localhost;
+$ GRANT ALL PRIVILEGES ON cinema.* TO username@localhost;
 
 Quitter :
 
@@ -249,18 +249,18 @@ $ quit;
 
 Pour importer la base de données, utilisez :
 
-$ mysql -u username -p cinema2 < cinema_export.sql
+$ mysql -u username -p cinema < cinema_export.sql
 
 Pour vérifier la base de données, utilisez :
 
-$ USE cinema2;
+$ USE cinema;
 
 $ SHOW TABLES;
 
 $ DESCRIBE Clients;
 
 Auteur
-Code DIANE
+Samadago Diane-code
 
 Licence
 MIT
